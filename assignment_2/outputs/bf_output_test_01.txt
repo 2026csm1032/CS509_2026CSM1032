@@ -1,0 +1,17 @@
+Algorithm: Bellman-Ford
+Source: 9
+
+Vertex Distance
+0 INF
+1 INF
+2 INF
+3 INF
+4 INF
+5 INF
+6 INF
+7 INF
+8 INF
+9 0
+
+Negative Cycle: false
+Execution Time: 0.000000000000 ms
