@@ -9,6 +9,7 @@ int main(){
         cout<<"1. Assignment 1\n";
         cout<<"2. Assignment 2\n";
         cout<<"3. Assignment 3\n";
+        cout<<"4. Assignment 4\n";
         cout<<"0. Exit\n\n";
 
         int choice;
@@ -53,6 +54,18 @@ int main(){
             system(
                 "cd ../assignment_3 && "
                 "assignment_3.exe"
+            );
+        }
+        if(choice==4){
+
+            system(
+                "cd ../assignment_4 && "
+                "g++ ./driver/main_driver.cpp -o assignment_4"
+            );
+
+            system(
+                "cd ../assignment_4 && "
+                "assignment_4.exe"
             );
         }
 
