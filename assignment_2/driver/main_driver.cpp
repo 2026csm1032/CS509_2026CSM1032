@@ -116,28 +116,28 @@ int main(){
         if(choice==1){
 
             compileIfNeeded(
-                "bellman_ford.exe",
+                "bellman_ford",
                 "g++ "
                 "driver/bellman_ford_driver.cpp "
                 "src/bellman_ford.cpp "
                 "../assignment_1/src/csr.cpp "
-                "-o bellman_ford.exe"
+                "-o bellman_ford"
             );
 
-            showTests(bellmanTests,".\\bellman_ford.exe");
+            showTests(bellmanTests,"./bellman_ford");
         }
 
         else if(choice==2){
 
             compileIfNeeded(
-                "floyd_warshall.exe",
+                "floyd_warshall",
                 "g++ "
                 "driver/floyd_warshall_driver.cpp "
                 "src/floyd_warshall.cpp "
-                "-o floyd_warshall.exe"
+                "-o floyd_warshall"
             );
 
-            showTests(floydTests,".\\floyd_warshall.exe");
+            showTests(floydTests,"./floyd_warshall");
         }
 
         else{

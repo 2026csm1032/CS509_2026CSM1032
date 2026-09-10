@@ -120,28 +120,28 @@ int main(){
         if(choice==1){
 
             compileIfNeeded(
-                "gemm.exe",
+                "gemm",
                 "g++ "
                 "driver/gemm_driver.cpp "
                 "src/gemm_simple.cpp "
                 "src/gemm_blocking.cpp "
-                "-o gemm.exe"
+                "-o gemm"
             );
 
-            showTests(gemmTests,".\\gemm.exe");
+            showTests(gemmTests,"./gemm");
         }
 
         else if(choice==2){
 
             compileIfNeeded(
-                "csr.exe",
+                "csr",
                 "g++ "
                 "driver/csr_driver.cpp "
                 "src/csr.cpp "
-                "-o csr.exe"
+                "-o csr"
             );
 
-            showTests(csrTests,".\\csr.exe");
+            showTests(csrTests,"./csr");
         }
 
         else{

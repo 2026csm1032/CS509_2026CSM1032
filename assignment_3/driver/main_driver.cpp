@@ -108,34 +108,34 @@ int main(){
         if(choice==1){
 
             compileIfNeeded(
-                "kruskal.exe",
+                "kruskal",
                 "g++ "
                 "driver/kruskal_driver.cpp "
                 "src/kruskal.cpp "
                 "../assignment_1/src/csr.cpp "
-                "-o kruskal.exe"
+                "-o kruskal"
             );
 
             showTests(
                 mstTests,
-                ".\\kruskal.exe"
+                "./kruskal"
             );
         }
 
         else if(choice==2){
 
             compileIfNeeded(
-                "prim.exe",
+                "prim",
                 "g++ "
                 "driver/prim_driver.cpp "
                 "src/prim.cpp "
                 "../assignment_1/src/csr.cpp "
-                "-o prim.exe"
+                "-o prim"
             );
 
             showTests(
                 mstTests,
-                ".\\prim.exe"
+                "./prim"
             );
         }
 

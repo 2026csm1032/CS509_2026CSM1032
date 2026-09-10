@@ -20,7 +20,7 @@ void compileIfNeeded(string exeName,string compileCommand){
 
 void runVertexColoring(){
 
-    compileIfNeeded("vertex_coloring.exe","g++ driver/vertex_coloring_driver.cpp src/vertex_coloring.cpp ../assignment_1/src/csr.cpp -o vertex_coloring.exe");
+    compileIfNeeded("vertex_coloring","g++ driver/vertex_coloring_driver.cpp src/vertex_coloring.cpp ../assignment_1/src/csr.cpp -o vertex_coloring");
 
     vector<string> tests={
         "color_10.txt",
@@ -48,7 +48,7 @@ void runVertexColoring(){
 
         for(int i=0;i<tests.size();i++){
 
-            string command="vertex_coloring.exe "+tests[i];
+            string command="./vertex_coloring "+tests[i];
 
             system(command.c_str());
         }
@@ -56,7 +56,7 @@ void runVertexColoring(){
 
     else if(choice>=1 && choice<=tests.size()){
 
-        string command="vertex_coloring.exe "+tests[choice-1];
+        string command="./vertex_coloring "+tests[choice-1];
 
         system(command.c_str());
     }
@@ -69,7 +69,7 @@ void runVertexColoring(){
 
 void runPageRank(){
 
-    compileIfNeeded("pagerank.exe","g++ driver/pagerank_driver.cpp src/pagerank.cpp ../assignment_1/src/csr.cpp -o pagerank.exe");
+    compileIfNeeded("pagerank","g++ driver/pagerank_driver.cpp src/pagerank.cpp ../assignment_1/src/csr.cpp -o pagerank");
 
     vector<string> tests={
         "pagerank_10.txt",
@@ -97,7 +97,7 @@ void runPageRank(){
 
         for(int i=0;i<tests.size();i++){
 
-            string command="pagerank.exe "+tests[i];
+            string command="./pagerank "+tests[i];
 
             system(command.c_str());
         }
@@ -105,7 +105,7 @@ void runPageRank(){
 
     else if(choice>=1 && choice<=tests.size()){
 
-        string command="pagerank.exe "+tests[choice-1];
+        string command="./pagerank "+tests[choice-1];
 
         system(command.c_str());
     }

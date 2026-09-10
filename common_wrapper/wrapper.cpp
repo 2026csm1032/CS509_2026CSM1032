@@ -29,7 +29,7 @@ int main(){
 
             system(
                 "cd ../assignment_1 && "
-                "assignment_1.exe"
+                "./assignment_1"
             );
         }
         if(choice==2){
@@ -41,7 +41,7 @@ int main(){
 
             system(
                 "cd ../assignment_2 && "
-                "assignment_2.exe"
+                "./assignment_2"
             );
         }
         if(choice==3){
@@ -53,7 +53,7 @@ int main(){
 
             system(
                 "cd ../assignment_3 && "
-                "assignment_3.exe"
+                "./assignment_3"
             );
         }
         if(choice==4){
@@ -65,7 +65,7 @@ int main(){
 
             system(
                 "cd ../assignment_4 && "
-                "assignment_4.exe"
+                "./assignment_4"
             );
         }
 
